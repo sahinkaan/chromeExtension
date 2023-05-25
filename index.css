@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1.time {
+    text-align: center;
+    font-size: 10rem;
+}
+
+div#exchange-rates {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+div#exchange-rates > p {
+    margin: 0;
+}
+
+div#weather {
+    margin-top: -20px;
+    background-color: rgba(65,64,66,0.3);
+    border-radius: 10px;
+    padding: 0 30px;
+}
+
+div.weather-info{
+    display: flex;
+    align-items: center;
+}
+
+div#weather > img {
+    border: 2px dashed green;
+}
+
+p.weather-city {
+    text-align: right;
+    margin: 0;
+    margin-top: -30px;
+    font-size: 2.5rem;
+}
+
+p.weather-temp {
+    margin: 0;
+    font-size: 3.5rem;
+    margin-left: -10px;
+}
+
+div.bottom > p {
+    font-size: 1.5rem;
+}
+
+div.bottom{
+    display: flex;
+    justify-content: space-between;
+}
