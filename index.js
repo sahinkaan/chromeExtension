@@ -49,9 +49,7 @@ fetch(`https://openexchangerates.org/api/latest.json?app_id=8b5acc90a9104d8aa2fa
         }
     })
     .then(data => {
-        console.log(data)
         const grAltin = (1 / data.rates.XAU) * (data.rates.TRY / 31.10)
-        console.log(grAltin)
         document.getElementById("usd-try").textContent = `💲 ${(Math.round(data.rates.TRY * 100) / 100 ).toFixed(2)} ₺`
         document.getElementById("xau-try").textContent = `🌕 ${Math.round(grAltin)} ₺`
     })
